@@ -1,8 +1,5 @@
-plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-}
-
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -44,5 +41,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-//    implementation 'com.github.zgs94328:ZgsLibrary:1.1.0'
+//    implementation 'com.github.zgs94328:ZgsLibrary:1.1.1'
 }
