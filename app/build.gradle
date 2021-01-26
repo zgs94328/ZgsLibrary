@@ -1,11 +1,13 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-//        applicationId "com.zgs.library.demo"
+        applicationId "com.zgs.library.demo"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -26,6 +28,11 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    dataBinding {
+
+        enabled true
+
     }
 }
 

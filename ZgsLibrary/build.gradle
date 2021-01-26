@@ -1,5 +1,7 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
 apply plugin: 'com.github.dcendents.android-maven'  //添加这两行
 group='com.github.zgs94328'  //GitHub昵称
 android {
@@ -47,7 +49,6 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
 
     api 'com.tencent.tbs.tbssdk:sdk:43939'                                  //腾讯x5webview
     api 'com.tencent:mmkv:1.0.22'                                           //微信开源项目，替代SP
