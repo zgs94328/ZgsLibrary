@@ -1,9 +1,13 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'com.github.dcendents.android-maven'
+    group='com.github.zgs94328'  //GitHub昵称
+
 }
 apply plugin: 'com.github.dcendents.android-maven'  //添加这两行
 group='com.github.zgs94328'  //GitHub昵称
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
